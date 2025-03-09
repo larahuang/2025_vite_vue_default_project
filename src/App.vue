@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+onMounted(() => {
+  console.log(import.meta.env.VITE_DEFAULT_URL)
+});
 </script>
 
 <template>
