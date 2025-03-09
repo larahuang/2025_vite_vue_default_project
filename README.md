@@ -8,3 +8,12 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 # Node 版本號
 Node v20.17.0 && npm 10.8.2
+
+### 完全忽略所有使用最新版本的 peerDependencies，而不固定在檔案 package-lock.json 上
+```
+npm install --legacy-peer-deps
+```
+### 強制使用最新版本，將所有版本固定在 package-lock.json 上
+```
+npm install --force
+```
